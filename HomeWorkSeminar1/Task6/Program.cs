@@ -3,8 +3,8 @@
 Console.WriteLine("Введи целое число и я скажу четное оно или нет");
 Console.Write("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-if (a%2 ==0)
+if (a % 2 == 0)
 {
-    Console.Write($"число {a} - четное");
+    Console.WriteLine($"число {a} - четное");
 }
-else Console.Write($"число {a} - нечетное");
+else Console.WriteLine($"число {a} - нечетное");
