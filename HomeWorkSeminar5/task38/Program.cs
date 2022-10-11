@@ -7,9 +7,13 @@ double[] CreateArrayRndInt(int size, int min, int max)
     double[] array = new double[size];
     var rnd = new Random();
 
+
     for (int i = 0; i < size; i++)
     {
         array[i] = rnd.NextDouble() * (max - min) + min;
+
+        double numRnd = rnd.NextDouble() * (max - min) + min;
+        array[i] = Math.Round(numRnd, 2, MidpointRounding.ToZero);
 
     }
 
